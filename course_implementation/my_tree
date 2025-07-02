@@ -7,24 +7,632 @@ Impurity: 0.722"]
 Samples: 38
 Impurity: 0.982"]
 	0 -> 1 [label=True]
-	2 [label="Leaf
+	2 [label="age ≤ 25.0
 Samples: 14
-Class: 0"]
+Impurity: 0.0"]
 	1 -> 2 [label=True]
-	3 [label="age ≤ 29.5
+	3 [label="Leaf
+Samples: 1
+Class: 0"]
+	2 -> 3 [label=True]
+	4 [label="age ≤ 29.0
+Samples: 13
+Impurity: 0.0"]
+	2 -> 4 [label=False]
+	5 [label="Leaf
+Samples: 1
+Class: 0"]
+	4 -> 5 [label=True]
+	6 [label="age ≤ 33.0
+Samples: 12
+Impurity: 0.0"]
+	4 -> 6 [label=False]
+	7 [label="Leaf
+Samples: 1
+Class: 0"]
+	6 -> 7 [label=True]
+	8 [label="age ≤ 36.5
+Samples: 11
+Impurity: 0.0"]
+	6 -> 8 [label=False]
+	9 [label="Leaf
+Samples: 1
+Class: 0"]
+	8 -> 9 [label=True]
+	10 [label="age ≤ 38.5
+Samples: 10
+Impurity: 0.0"]
+	8 -> 10 [label=False]
+	11 [label="Leaf
+Samples: 1
+Class: 0"]
+	10 -> 11 [label=True]
+	12 [label="age ≤ 40.0
+Samples: 9
+Impurity: 0.0"]
+	10 -> 12 [label=False]
+	13 [label="Leaf
+Samples: 1
+Class: 0"]
+	12 -> 13 [label=True]
+	14 [label="age ≤ 43.5
+Samples: 8
+Impurity: 0.0"]
+	12 -> 14 [label=False]
+	15 [label="Leaf
+Samples: 1
+Class: 0"]
+	14 -> 15 [label=True]
+	16 [label="age ≤ 46.0
+Samples: 7
+Impurity: 0.0"]
+	14 -> 16 [label=False]
+	17 [label="Leaf
+Samples: 1
+Class: 0"]
+	16 -> 17 [label=True]
+	18 [label="age ≤ 46.0
+Samples: 6
+Impurity: 0.0"]
+	16 -> 18 [label=False]
+	19 [label="Leaf
+Samples: 1
+Class: 0"]
+	18 -> 19 [label=True]
+	20 [label="age ≤ 47.0
+Samples: 5
+Impurity: 0.0"]
+	18 -> 20 [label=False]
+	21 [label="Leaf
+Samples: 1
+Class: 0"]
+	20 -> 21 [label=True]
+	22 [label="age ≤ 49.5
+Samples: 4
+Impurity: 0.0"]
+	20 -> 22 [label=False]
+	23 [label="Leaf
+Samples: 1
+Class: 0"]
+	22 -> 23 [label=True]
+	24 [label="age ≤ 52.0
+Samples: 3
+Impurity: 0.0"]
+	22 -> 24 [label=False]
+	25 [label="Leaf
+Samples: 1
+Class: 0"]
+	24 -> 25 [label=True]
+	26 [label="age ≤ 55.5
+Samples: 2
+Impurity: 0.0"]
+	24 -> 26 [label=False]
+	27 [label="Leaf
+Samples: 1
+Class: 0"]
+	26 -> 27 [label=True]
+	28 [label="Leaf
+Samples: 1
+Class: 0"]
+	26 -> 28 [label=False]
+	29 [label="age ≤ 29.5
 Samples: 24
 Impurity: 0.918"]
-	1 -> 3 [label=False]
-	4 [label="Leaf
+	1 -> 29 [label=False]
+	30 [label="age ≤ 18.5
 Samples: 8
+Impurity: 0.0"]
+	29 -> 30 [label=True]
+	31 [label="Leaf
+Samples: 1
 Class: 0"]
-	3 -> 4 [label=True]
-	5 [label="Leaf
+	30 -> 31 [label=True]
+	32 [label="age ≤ 19.0
+Samples: 7
+Impurity: 0.0"]
+	30 -> 32 [label=False]
+	33 [label="Leaf
+Samples: 1
+Class: 0"]
+	32 -> 33 [label=True]
+	34 [label="age ≤ 19.5
+Samples: 6
+Impurity: 0.0"]
+	32 -> 34 [label=False]
+	35 [label="Leaf
+Samples: 1
+Class: 0"]
+	34 -> 35 [label=True]
+	36 [label="age ≤ 22.0
+Samples: 5
+Impurity: 0.0"]
+	34 -> 36 [label=False]
+	37 [label="Leaf
+Samples: 1
+Class: 0"]
+	36 -> 37 [label=True]
+	38 [label="age ≤ 24.5
+Samples: 4
+Impurity: 0.0"]
+	36 -> 38 [label=False]
+	39 [label="Leaf
+Samples: 1
+Class: 0"]
+	38 -> 39 [label=True]
+	40 [label="age ≤ 26.5
+Samples: 3
+Impurity: 0.0"]
+	38 -> 40 [label=False]
+	41 [label="Leaf
+Samples: 1
+Class: 0"]
+	40 -> 41 [label=True]
+	42 [label="age ≤ 28.0
+Samples: 2
+Impurity: 0.0"]
+	40 -> 42 [label=False]
+	43 [label="Leaf
+Samples: 1
+Class: 0"]
+	42 -> 43 [label=True]
+	44 [label="Leaf
+Samples: 1
+Class: 0"]
+	42 -> 44 [label=False]
+	45 [label="age ≤ 32.0
 Samples: 16
+Impurity: 0.0"]
+	29 -> 45 [label=False]
+	46 [label="Leaf
+Samples: 1
 Class: 1"]
-	3 -> 5 [label=False]
-	6 [label="Leaf
+	45 -> 46 [label=True]
+	47 [label="age ≤ 33.0
+Samples: 15
+Impurity: 0.0"]
+	45 -> 47 [label=False]
+	48 [label="Leaf
+Samples: 1
+Class: 1"]
+	47 -> 48 [label=True]
+	49 [label="age ≤ 34.0
+Samples: 14
+Impurity: 0.0"]
+	47 -> 49 [label=False]
+	50 [label="Leaf
+Samples: 1
+Class: 1"]
+	49 -> 50 [label=True]
+	51 [label="age ≤ 36.5
+Samples: 13
+Impurity: 0.0"]
+	49 -> 51 [label=False]
+	52 [label="Leaf
+Samples: 1
+Class: 1"]
+	51 -> 52 [label=True]
+	53 [label="age ≤ 38.5
+Samples: 12
+Impurity: 0.0"]
+	51 -> 53 [label=False]
+	54 [label="Leaf
+Samples: 1
+Class: 1"]
+	53 -> 54 [label=True]
+	55 [label="age ≤ 40.0
+Samples: 11
+Impurity: 0.0"]
+	53 -> 55 [label=False]
+	56 [label="Leaf
+Samples: 1
+Class: 1"]
+	55 -> 56 [label=True]
+	57 [label="age ≤ 41.0
+Samples: 10
+Impurity: 0.0"]
+	55 -> 57 [label=False]
+	58 [label="Leaf
+Samples: 1
+Class: 1"]
+	57 -> 58 [label=True]
+	59 [label="age ≤ 41.5
+Samples: 9
+Impurity: 0.0"]
+	57 -> 59 [label=False]
+	60 [label="Leaf
+Samples: 1
+Class: 1"]
+	59 -> 60 [label=True]
+	61 [label="age ≤ 42.0
+Samples: 8
+Impurity: 0.0"]
+	59 -> 61 [label=False]
+	62 [label="Leaf
+Samples: 1
+Class: 1"]
+	61 -> 62 [label=True]
+	63 [label="age ≤ 42.5
+Samples: 7
+Impurity: 0.0"]
+	61 -> 63 [label=False]
+	64 [label="Leaf
+Samples: 1
+Class: 1"]
+	63 -> 64 [label=True]
+	65 [label="age ≤ 44.0
+Samples: 6
+Impurity: 0.0"]
+	63 -> 65 [label=False]
+	66 [label="Leaf
+Samples: 1
+Class: 1"]
+	65 -> 66 [label=True]
+	67 [label="age ≤ 45.0
+Samples: 5
+Impurity: 0.0"]
+	65 -> 67 [label=False]
+	68 [label="Leaf
+Samples: 1
+Class: 1"]
+	67 -> 68 [label=True]
+	69 [label="age ≤ 48.5
+Samples: 4
+Impurity: 0.0"]
+	67 -> 69 [label=False]
+	70 [label="Leaf
+Samples: 1
+Class: 1"]
+	69 -> 70 [label=True]
+	71 [label="age ≤ 54.5
+Samples: 3
+Impurity: 0.0"]
+	69 -> 71 [label=False]
+	72 [label="Leaf
+Samples: 1
+Class: 1"]
+	71 -> 72 [label=True]
+	73 [label="age ≤ 58.0
+Samples: 2
+Impurity: 0.0"]
+	71 -> 73 [label=False]
+	74 [label="Leaf
+Samples: 1
+Class: 1"]
+	73 -> 74 [label=True]
+	75 [label="Leaf
+Samples: 1
+Class: 1"]
+	73 -> 75 [label=False]
+	76 [label="age ≤ 19.0
 Samples: 42
+Impurity: 0.0"]
+	0 -> 76 [label=False]
+	77 [label="Leaf
+Samples: 1
 Class: 0"]
-	0 -> 6 [label=False]
+	76 -> 77 [label=True]
+	78 [label="age ≤ 20.0
+Samples: 41
+Impurity: 0.0"]
+	76 -> 78 [label=False]
+	79 [label="Leaf
+Samples: 1
+Class: 0"]
+	78 -> 79 [label=True]
+	80 [label="age ≤ 21.0
+Samples: 40
+Impurity: 0.0"]
+	78 -> 80 [label=False]
+	81 [label="Leaf
+Samples: 1
+Class: 0"]
+	80 -> 81 [label=True]
+	82 [label="age ≤ 21.5
+Samples: 39
+Impurity: 0.0"]
+	80 -> 82 [label=False]
+	83 [label="Leaf
+Samples: 1
+Class: 0"]
+	82 -> 83 [label=True]
+	84 [label="age ≤ 23.0
+Samples: 38
+Impurity: 0.0"]
+	82 -> 84 [label=False]
+	85 [label="Leaf
+Samples: 1
+Class: 0"]
+	84 -> 85 [label=True]
+	86 [label="age ≤ 24.0
+Samples: 37
+Impurity: 0.0"]
+	84 -> 86 [label=False]
+	87 [label="Leaf
+Samples: 1
+Class: 0"]
+	86 -> 87 [label=True]
+	88 [label="age ≤ 24.5
+Samples: 36
+Impurity: 0.0"]
+	86 -> 88 [label=False]
+	89 [label="Leaf
+Samples: 1
+Class: 0"]
+	88 -> 89 [label=True]
+	90 [label="age ≤ 25.0
+Samples: 35
+Impurity: 0.0"]
+	88 -> 90 [label=False]
+	91 [label="Leaf
+Samples: 1
+Class: 0"]
+	90 -> 91 [label=True]
+	92 [label="age ≤ 25.0
+Samples: 34
+Impurity: 0.0"]
+	90 -> 92 [label=False]
+	93 [label="Leaf
+Samples: 1
+Class: 0"]
+	92 -> 93 [label=True]
+	94 [label="age ≤ 25.5
+Samples: 33
+Impurity: 0.0"]
+	92 -> 94 [label=False]
+	95 [label="Leaf
+Samples: 1
+Class: 0"]
+	94 -> 95 [label=True]
+	96 [label="age ≤ 26.0
+Samples: 32
+Impurity: 0.0"]
+	94 -> 96 [label=False]
+	97 [label="Leaf
+Samples: 1
+Class: 0"]
+	96 -> 97 [label=True]
+	98 [label="age ≤ 27.0
+Samples: 31
+Impurity: 0.0"]
+	96 -> 98 [label=False]
+	99 [label="Leaf
+Samples: 1
+Class: 0"]
+	98 -> 99 [label=True]
+	100 [label="age ≤ 28.5
+Samples: 30
+Impurity: 0.0"]
+	98 -> 100 [label=False]
+	101 [label="Leaf
+Samples: 1
+Class: 0"]
+	100 -> 101 [label=True]
+	102 [label="age ≤ 30.0
+Samples: 29
+Impurity: 0.0"]
+	100 -> 102 [label=False]
+	103 [label="Leaf
+Samples: 1
+Class: 0"]
+	102 -> 103 [label=True]
+	104 [label="age ≤ 31.0
+Samples: 28
+Impurity: 0.0"]
+	102 -> 104 [label=False]
+	105 [label="Leaf
+Samples: 1
+Class: 0"]
+	104 -> 105 [label=True]
+	106 [label="age ≤ 31.5
+Samples: 27
+Impurity: 0.0"]
+	104 -> 106 [label=False]
+	107 [label="Leaf
+Samples: 1
+Class: 0"]
+	106 -> 107 [label=True]
+	108 [label="age ≤ 32.0
+Samples: 26
+Impurity: 0.0"]
+	106 -> 108 [label=False]
+	109 [label="Leaf
+Samples: 1
+Class: 0"]
+	108 -> 109 [label=True]
+	110 [label="age ≤ 32.0
+Samples: 25
+Impurity: 0.0"]
+	108 -> 110 [label=False]
+	111 [label="Leaf
+Samples: 1
+Class: 0"]
+	110 -> 111 [label=True]
+	112 [label="age ≤ 33.0
+Samples: 24
+Impurity: 0.0"]
+	110 -> 112 [label=False]
+	113 [label="Leaf
+Samples: 1
+Class: 0"]
+	112 -> 113 [label=True]
+	114 [label="age ≤ 34.0
+Samples: 23
+Impurity: 0.0"]
+	112 -> 114 [label=False]
+	115 [label="Leaf
+Samples: 1
+Class: 0"]
+	114 -> 115 [label=True]
+	116 [label="age ≤ 35.0
+Samples: 22
+Impurity: 0.0"]
+	114 -> 116 [label=False]
+	117 [label="Leaf
+Samples: 1
+Class: 0"]
+	116 -> 117 [label=True]
+	118 [label="age ≤ 37.0
+Samples: 21
+Impurity: 0.0"]
+	116 -> 118 [label=False]
+	119 [label="Leaf
+Samples: 1
+Class: 0"]
+	118 -> 119 [label=True]
+	120 [label="age ≤ 39.0
+Samples: 20
+Impurity: 0.0"]
+	118 -> 120 [label=False]
+	121 [label="Leaf
+Samples: 1
+Class: 0"]
+	120 -> 121 [label=True]
+	122 [label="age ≤ 40.0
+Samples: 19
+Impurity: 0.0"]
+	120 -> 122 [label=False]
+	123 [label="Leaf
+Samples: 1
+Class: 0"]
+	122 -> 123 [label=True]
+	124 [label="age ≤ 40.5
+Samples: 18
+Impurity: 0.0"]
+	122 -> 124 [label=False]
+	125 [label="Leaf
+Samples: 1
+Class: 0"]
+	124 -> 125 [label=True]
+	126 [label="age ≤ 41.0
+Samples: 17
+Impurity: 0.0"]
+	124 -> 126 [label=False]
+	127 [label="Leaf
+Samples: 1
+Class: 0"]
+	126 -> 127 [label=True]
+	128 [label="age ≤ 42.0
+Samples: 16
+Impurity: 0.0"]
+	126 -> 128 [label=False]
+	129 [label="Leaf
+Samples: 1
+Class: 0"]
+	128 -> 129 [label=True]
+	130 [label="age ≤ 43.0
+Samples: 15
+Impurity: 0.0"]
+	128 -> 130 [label=False]
+	131 [label="Leaf
+Samples: 1
+Class: 0"]
+	130 -> 131 [label=True]
+	132 [label="age ≤ 43.5
+Samples: 14
+Impurity: 0.0"]
+	130 -> 132 [label=False]
+	133 [label="Leaf
+Samples: 1
+Class: 0"]
+	132 -> 133 [label=True]
+	134 [label="age ≤ 47.0
+Samples: 13
+Impurity: 0.0"]
+	132 -> 134 [label=False]
+	135 [label="Leaf
+Samples: 1
+Class: 0"]
+	134 -> 135 [label=True]
+	136 [label="age ≤ 51.0
+Samples: 12
+Impurity: 0.0"]
+	134 -> 136 [label=False]
+	137 [label="Leaf
+Samples: 1
+Class: 0"]
+	136 -> 137 [label=True]
+	138 [label="age ≤ 52.0
+Samples: 11
+Impurity: 0.0"]
+	136 -> 138 [label=False]
+	139 [label="Leaf
+Samples: 1
+Class: 0"]
+	138 -> 139 [label=True]
+	140 [label="age ≤ 52.5
+Samples: 10
+Impurity: 0.0"]
+	138 -> 140 [label=False]
+	141 [label="Leaf
+Samples: 1
+Class: 0"]
+	140 -> 141 [label=True]
+	142 [label="age ≤ 53.0
+Samples: 9
+Impurity: 0.0"]
+	140 -> 142 [label=False]
+	143 [label="Leaf
+Samples: 1
+Class: 0"]
+	142 -> 143 [label=True]
+	144 [label="age ≤ 53.5
+Samples: 8
+Impurity: 0.0"]
+	142 -> 144 [label=False]
+	145 [label="Leaf
+Samples: 1
+Class: 0"]
+	144 -> 145 [label=True]
+	146 [label="age ≤ 54.5
+Samples: 7
+Impurity: 0.0"]
+	144 -> 146 [label=False]
+	147 [label="Leaf
+Samples: 1
+Class: 0"]
+	146 -> 147 [label=True]
+	148 [label="age ≤ 55.5
+Samples: 6
+Impurity: 0.0"]
+	146 -> 148 [label=False]
+	149 [label="Leaf
+Samples: 1
+Class: 0"]
+	148 -> 149 [label=True]
+	150 [label="age ≤ 56.0
+Samples: 5
+Impurity: 0.0"]
+	148 -> 150 [label=False]
+	151 [label="Leaf
+Samples: 1
+Class: 0"]
+	150 -> 151 [label=True]
+	152 [label="age ≤ 56.0
+Samples: 4
+Impurity: 0.0"]
+	150 -> 152 [label=False]
+	153 [label="Leaf
+Samples: 1
+Class: 0"]
+	152 -> 153 [label=True]
+	154 [label="age ≤ 57.5
+Samples: 3
+Impurity: 0.0"]
+	152 -> 154 [label=False]
+	155 [label="Leaf
+Samples: 1
+Class: 0"]
+	154 -> 155 [label=True]
+	156 [label="age ≤ 59.0
+Samples: 2
+Impurity: 0.0"]
+	154 -> 156 [label=False]
+	157 [label="Leaf
+Samples: 1
+Class: 0"]
+	156 -> 157 [label=True]
+	158 [label="Leaf
+Samples: 1
+Class: 0"]
+	156 -> 158 [label=False]
 }
