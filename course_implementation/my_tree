@@ -1,638 +1,582 @@
 digraph {
 	node [shape=box]
-	159 [label="feature_1 ≤ 2.803537136069344
+	0 [label="feature_1 ≤ 4.7979037014374075
 Samples: 80
-Impurity: 6.322"]
-	160 [label="feature_1 ≤ 1.973492719766588
-Samples: 40
-Impurity: 5.322"]
-	159 -> 160 [label=True]
-	161 [label="feature_1 ≤ 1.0278177049984416
-Samples: 20
-Impurity: 4.322"]
-	160 -> 161 [label=True]
-	162 [label="feature_1 ≤ 0.5226701244409859
-Samples: 10
-Impurity: 3.322"]
-	161 -> 162 [label=True]
-	163 [label="feature_1 ≤ 0.2990382392965679
-Samples: 5
-Impurity: 2.322"]
-	162 -> 163 [label=True]
-	164 [label="feature_1 ≤ 0.15470621933848788
-Samples: 2
-Impurity: 1.0"]
-	163 -> 164 [label=True]
-	165 [label="Leaf
-Samples: 1
-Class: -5.899130800863605"]
-	164 -> 165 [label=True]
-	166 [label="Leaf
-Samples: 1
-Class: -10.630058348998409"]
-	164 -> 166 [label=False]
-	167 [label="feature_1 ≤ 0.39807905012878225
-Samples: 3
-Impurity: 1.585"]
-	163 -> 167 [label=False]
-	168 [label="Leaf
-Samples: 1
-Class: -3.594467573764939"]
-	167 -> 168 [label=True]
-	169 [label="feature_1 ≤ 0.4583885081526789
-Samples: 2
-Impurity: 1.0"]
-	167 -> 169 [label=False]
-	170 [label="Leaf
-Samples: 1
-Class: 0.1222242487784792"]
-	169 -> 170 [label=True]
-	171 [label="Leaf
-Samples: 1
-Class: -5.428275757008292"]
-	169 -> 171 [label=False]
-	172 [label="feature_1 ≤ 0.6980111833252517
-Samples: 5
-Impurity: 2.322"]
-	162 -> 172 [label=False]
-	173 [label="feature_1 ≤ 0.6156760257673949
-Samples: 2
-Impurity: 1.0"]
-	172 -> 173 [label=True]
-	174 [label="Leaf
-Samples: 1
-Class: -4.74392785971561"]
-	173 -> 174 [label=True]
-	175 [label="Leaf
-Samples: 1
-Class: 0.3059685455698556"]
-	173 -> 175 [label=False]
-	176 [label="feature_1 ≤ 0.8152157286584516
-Samples: 3
-Impurity: 1.585"]
-	172 -> 176 [label=False]
-	177 [label="Leaf
+Impurity: 86.233"]
+	1 [label="feature_1 ≤ 1.4020904281340223
+Samples: 35
+Impurity: 17.961"]
+	0 -> 1 [label=True]
+	2 [label="feature_2 ≤ 1.8709621164249137
+Samples: 14
+Impurity: 17.235"]
+	1 -> 2 [label=True]
+	3 [label="feature_2 ≤ 0.40160127222111675
+Samples: 4
+Impurity: 6.513"]
+	2 -> 3 [label=True]
+	4 [label="Leaf
 Samples: 1
 Class: 6.458085028192503"]
-	176 -> 177 [label=True]
-	178 [label="feature_1 ≤ 0.930823080291517
+	3 -> 4 [label=True]
+	5 [label="feature_1 ≤ 0.8054817421783389
+Samples: 3
+Impurity: 1.201"]
+	3 -> 5 [label=False]
+	6 [label="Leaf
 Samples: 2
-Impurity: 1.0"]
-	176 -> 178 [label=False]
-	179 [label="Leaf
-Samples: 1
-Class: -3.036485039889105"]
-	178 -> 179 [label=True]
-	180 [label="Leaf
-Samples: 1
-Class: -7.129720618131992"]
-	178 -> 180 [label=False]
-	181 [label="feature_1 ≤ 1.4845937265548264
-Samples: 10
-Impurity: 3.322"]
-	161 -> 181 [label=False]
-	182 [label="feature_1 ≤ 1.189536471849543
-Samples: 5
-Impurity: 2.322"]
-	181 -> 182 [label=True]
-	183 [label="feature_1 ≤ 1.1188024325921706
-Samples: 2
-Impurity: 1.0"]
-	182 -> 183 [label=True]
-	184 [label="Leaf
-Samples: 1
-Class: -2.726288754667552"]
-	183 -> 184 [label=True]
-	185 [label="Leaf
+Class: 0.2140963971741674"]
+	5 -> 6 [label=True]
+	7 [label="Leaf
 Samples: 1
 Class: 2.533779523457909"]
-	183 -> 185 [label=False]
-	186 [label="feature_1 ≤ 1.3076604774841034
-Samples: 3
-Impurity: 1.585"]
-	182 -> 186 [label=False]
-	187 [label="Leaf
-Samples: 1
-Class: -5.53513841581734"]
-	186 -> 187 [label=True]
-	188 [label="feature_1 ≤ 1.4020904281340223
+	5 -> 7 [label=False]
+	8 [label="feature_1 ≤ 0.40419466917608055
+Samples: 10
+Impurity: 4.861"]
+	2 -> 8 [label=False]
+	9 [label="feature_1 ≤ 0.15470621933848788
 Samples: 2
-Impurity: 1.0"]
-	186 -> 188 [label=False]
-	189 [label="Leaf
+Impurity: 5.595"]
+	8 -> 9 [label=True]
+	10 [label="Leaf
+Samples: 1
+Class: -5.899130800863605"]
+	9 -> 10 [label=True]
+	11 [label="Leaf
+Samples: 1
+Class: -10.630058348998409"]
+	9 -> 11 [label=False]
+	12 [label="feature_2 ≤ 4.646346487164011
+Samples: 8
+Impurity: 1.896"]
+	8 -> 12 [label=False]
+	13 [label="feature_1 ≤ 1.0278177049984416
+Samples: 7
+Impurity: 2.004"]
+	12 -> 13 [label=True]
+	14 [label="feature_1 ≤ 0.930823080291517
+Samples: 5
+Impurity: 2.078"]
+	13 -> 14 [label=True]
+	15 [label="feature_1 ≤ 0.7328805711005948
+Samples: 4
+Impurity: 0.881"]
+	14 -> 15 [label=True]
+	16 [label="feature_1 ≤ 0.40419466917608055
+Samples: 3
+Impurity: 0.572"]
+	15 -> 16 [label=True]
+	17 [label="Leaf
+Samples: 1
+Class: -3.594467573764939"]
+	16 -> 17 [label=True]
+	18 [label="feature_1 ≤ 0.5226701244409859
+Samples: 2
+Impurity: 0.117"]
+	16 -> 18 [label=False]
+	19 [label="Leaf
+Samples: 1
+Class: -5.428275757008292"]
+	18 -> 19 [label=True]
+	20 [label="Leaf
+Samples: 1
+Class: -4.74392785971561"]
+	18 -> 20 [label=False]
+	21 [label="Leaf
+Samples: 1
+Class: -3.036485039889105"]
+	15 -> 21 [label=False]
+	22 [label="Leaf
+Samples: 1
+Class: -7.129720618131992"]
+	14 -> 22 [label=False]
+	23 [label="feature_1 ≤ 1.2369264382267313
+Samples: 2
+Impurity: 0.468"]
+	13 -> 23 [label=False]
+	24 [label="Leaf
+Samples: 1
+Class: -2.726288754667552"]
+	23 -> 24 [label=True]
+	25 [label="Leaf
 Samples: 1
 Class: -4.093793230040389"]
-	188 -> 189 [label=True]
-	190 [label="Leaf
+	23 -> 25 [label=False]
+	26 [label="Leaf
 Samples: 1
-Class: 0.0491990038673145"]
-	188 -> 190 [label=False]
-	191 [label="feature_1 ≤ 1.8261473853026724
-Samples: 5
-Impurity: 2.322"]
-	181 -> 191 [label=False]
-	192 [label="feature_1 ≤ 1.6890974377165164
-Samples: 2
-Impurity: 1.0"]
-	191 -> 192 [label=True]
-	193 [label="Leaf
+Class: -5.53513841581734"]
+	12 -> 26 [label=False]
+	27 [label="feature_2 ≤ 2.168764904237631
+Samples: 21
+Impurity: 5.77"]
+	1 -> 27 [label=False]
+	28 [label="feature_1 ≤ 2.3348842102593244
+Samples: 15
+Impurity: 3.397"]
+	27 -> 28 [label=True]
+	29 [label="feature_2 ≤ 1.425180735301527
+Samples: 3
+Impurity: 1.739"]
+	28 -> 29 [label=True]
+	30 [label="Leaf
 Samples: 1
 Class: 3.134579160420905"]
-	192 -> 193 [label=True]
-	194 [label="Leaf
+	29 -> 30 [label=True]
+	31 [label="feature_1 ≤ 1.6137459609093163
+Samples: 2
+Impurity: 0.128"]
+	29 -> 31 [label=False]
+	32 [label="Leaf
+Samples: 1
+Class: 0.0491990038673145"]
+	31 -> 32 [label=True]
+	33 [label="Leaf
 Samples: 1
 Class: 0.7648317710977632"]
-	192 -> 194 [label=False]
-	195 [label="feature_1 ≤ 1.8412948268948044
+	31 -> 33 [label=False]
+	34 [label="feature_1 ≤ 3.4104182872842683
+Samples: 12
+Impurity: 2.485"]
+	28 -> 34 [label=False]
+	35 [label="feature_2 ≤ 3.1738709500351896
+Samples: 11
+Impurity: 1.836"]
+	34 -> 35 [label=True]
+	36 [label="feature_1 ≤ 2.447341123494488
+Samples: 9
+Impurity: 1.341"]
+	35 -> 36 [label=True]
+	37 [label="feature_1 ≤ 2.7614177073063835
+Samples: 4
+Impurity: 1.675"]
+	36 -> 37 [label=True]
+	38 [label="feature_1 ≤ 1.9178506852984971
 Samples: 3
-Impurity: 1.585"]
-	191 -> 195 [label=False]
-	196 [label="Leaf
-Samples: 1
-Class: 0.5811153590337317"]
-	195 -> 196 [label=True]
-	197 [label="feature_1 ≤ 1.9041865897233612
-Samples: 2
-Impurity: 1.0"]
-	195 -> 197 [label=False]
-	198 [label="Leaf
+Impurity: 0.289"]
+	37 -> 38 [label=True]
+	39 [label="Leaf
 Samples: 1
 Class: 3.880738076136165"]
-	197 -> 198 [label=True]
-	199 [label="Leaf
-Samples: 1
-Class: 5.968752700596623"]
-	197 -> 199 [label=False]
-	200 [label="feature_1 ≤ 3.18447199058079
-Samples: 20
-Impurity: 4.322"]
-	160 -> 200 [label=False]
-	201 [label="feature_1 ≤ 2.8608182494271137
-Samples: 10
-Impurity: 3.322"]
-	200 -> 201 [label=True]
-	202 [label="feature_1 ≤ 2.0600644641831796
-Samples: 5
-Impurity: 2.322"]
-	201 -> 202 [label=True]
-	203 [label="feature_1 ≤ 1.9919473184626606
+	38 -> 39 [label=True]
+	40 [label="feature_1 ≤ 2.3503235665403412
 Samples: 2
-Impurity: 1.0"]
-	202 -> 203 [label=True]
-	204 [label="Leaf
+Impurity: 0.076"]
+	38 -> 40 [label=False]
+	41 [label="Leaf
 Samples: 1
 Class: 2.570160414367308"]
-	203 -> 204 [label=True]
-	205 [label="Leaf
-Samples: 1
-Class: -2.71924786095005"]
-	203 -> 205 [label=False]
-	206 [label="feature_1 ≤ 2.4184407122608604
-Samples: 3
-Impurity: 1.585"]
-	202 -> 206 [label=False]
-	207 [label="Leaf
-Samples: 1
-Class: -0.8854686214228887"]
-	206 -> 207 [label=True]
-	208 [label="feature_1 ≤ 2.7614177073063835
-Samples: 2
-Impurity: 1.0"]
-	206 -> 208 [label=False]
-	209 [label="Leaf
+	40 -> 41 [label=True]
+	42 [label="Leaf
 Samples: 1
 Class: 3.120195149892678"]
-	208 -> 209 [label=True]
-	210 [label="Leaf
+	40 -> 42 [label=False]
+	43 [label="Leaf
 Samples: 1
 Class: 5.979487161002197"]
-	208 -> 210 [label=False]
-	211 [label="feature_1 ≤ 3.0442800606645415
+	37 -> 43 [label=False]
+	44 [label="feature_1 ≤ 3.113466989025366
 Samples: 5
-Impurity: 2.322"]
-	201 -> 211 [label=False]
-	212 [label="feature_1 ≤ 2.9773569157878983
-Samples: 2
-Impurity: 1.0"]
-	211 -> 212 [label=True]
-	213 [label="Leaf
+Impurity: 0.462"]
+	36 -> 44 [label=False]
+	45 [label="feature_1 ≤ 2.979214546857063
+Samples: 3
+Impurity: 0.163"]
+	44 -> 45 [label=True]
+	46 [label="Leaf
 Samples: 1
 Class: 1.7118312168538754"]
-	212 -> 213 [label=True]
-	214 [label="Leaf
-Samples: 1
-Class: 0.5997702877892463"]
-	212 -> 214 [label=False]
-	215 [label="feature_1 ≤ 3.0779804544451643
-Samples: 3
-Impurity: 1.585"]
-	211 -> 215 [label=False]
-	216 [label="Leaf
+	45 -> 46 [label=True]
+	47 [label="feature_1 ≤ 3.0779804544451643
+Samples: 2
+Impurity: 0.049"]
+	45 -> 47 [label=False]
+	48 [label="Leaf
 Samples: 1
 Class: 2.2569194216306485"]
-	215 -> 216 [label=True]
-	217 [label="feature_1 ≤ 3.113466989025366
-Samples: 2
-Impurity: 1.0"]
-	215 -> 217 [label=False]
-	218 [label="Leaf
+	47 -> 48 [label=True]
+	49 [label="Leaf
 Samples: 1
 Class: 2.699768201003096"]
-	217 -> 218 [label=True]
-	219 [label="Leaf
-Samples: 1
-Class: 3.37210637977536"]
-	217 -> 219 [label=False]
-	220 [label="feature_1 ≤ 3.6241378591898217
-Samples: 10
-Impurity: 3.322"]
-	200 -> 220 [label=False]
-	221 [label="feature_1 ≤ 3.2811417780795678
-Samples: 5
-Impurity: 2.322"]
-	220 -> 221 [label=True]
-	222 [label="feature_1 ≤ 3.2525682639500575
+	47 -> 49 [label=False]
+	50 [label="Leaf
 Samples: 2
-Impurity: 1.0"]
-	221 -> 222 [label=True]
-	223 [label="Leaf
+Class: 3.450337104887418"]
+	44 -> 50 [label=False]
+	51 [label="feature_1 ≤ 2.606565965912048
+Samples: 2
+Impurity: 0.372"]
+	35 -> 51 [label=False]
+	52 [label="Leaf
 Samples: 1
-Class: 3.528567829999476"]
-	222 -> 223 [label=True]
-	224 [label="Leaf
+Class: 5.968752700596623"]
+	51 -> 52 [label=True]
+	53 [label="Leaf
 Samples: 1
 Class: 4.748877717140533"]
-	222 -> 224 [label=False]
-	225 [label="feature_1 ≤ 3.4382567577311924
-Samples: 3
-Impurity: 1.585"]
-	221 -> 225 [label=False]
-	226 [label="Leaf
-Samples: 1
-Class: 4.967892741444499"]
-	225 -> 226 [label=True]
-	227 [label="feature_1 ≤ 3.5760952761893097
-Samples: 2
-Impurity: 1.0"]
-	225 -> 227 [label=False]
-	228 [label="Leaf
+	51 -> 53 [label=False]
+	54 [label="Leaf
 Samples: 1
 Class: 6.862791401046628"]
-	227 -> 228 [label=True]
-	229 [label="Leaf
+	34 -> 54 [label=False]
+	55 [label="feature_1 ≤ 2.5715126735304152
+Samples: 6
+Impurity: 5.424"]
+	27 -> 55 [label=False]
+	56 [label="feature_1 ≤ 2.582906768189069
+Samples: 4
+Impurity: 1.852"]
+	55 -> 56 [label=True]
+	57 [label="feature_1 ≤ 1.9153914600589679
+Samples: 3
+Impurity: 1.823"]
+	56 -> 57 [label=True]
+	58 [label="Leaf
+Samples: 1
+Class: 0.5811153590337317"]
+	57 -> 58 [label=True]
+	59 [label="feature_1 ≤ 2.0600644641831796
+Samples: 2
+Impurity: 0.841"]
+	57 -> 59 [label=False]
+	60 [label="Leaf
+Samples: 1
+Class: -2.71924786095005"]
+	59 -> 60 [label=True]
+	61 [label="Leaf
+Samples: 1
+Class: -0.8854686214228887"]
+	59 -> 61 [label=False]
+	62 [label="Leaf
+Samples: 1
+Class: 0.5997702877892463"]
+	56 -> 62 [label=False]
+	63 [label="feature_1 ≤ 3.446818766984609
+Samples: 2
+Impurity: 6.355"]
+	55 -> 63 [label=False]
+	64 [label="Leaf
+Samples: 1
+Class: 4.967892741444499"]
+	63 -> 64 [label=True]
+	65 [label="Leaf
 Samples: 1
 Class: -0.0740612944734402"]
-	227 -> 229 [label=False]
-	230 [label="feature_1 ≤ 4.081091540240158
-Samples: 5
-Impurity: 2.322"]
-	220 -> 230 [label=False]
-	231 [label="feature_1 ≤ 3.775195664915868
+	63 -> 65 [label=False]
+	66 [label="feature_1 ≤ 7.658761142857292
+Samples: 45
+Impurity: 30.623"]
+	0 -> 66 [label=False]
+	67 [label="feature_1 ≤ 6.175755107749687
+Samples: 29
+Impurity: 14.602"]
+	66 -> 67 [label=True]
+	68 [label="feature_2 ≤ 3.162233481679576
+Samples: 19
+Impurity: 9.306"]
+	67 -> 68 [label=True]
+	69 [label="feature_1 ≤ 5.695624241026611
 Samples: 2
-Impurity: 1.0"]
-	230 -> 231 [label=True]
-	232 [label="Leaf
-Samples: 1
-Class: 11.54470255160603"]
-	231 -> 232 [label=True]
-	233 [label="Leaf
-Samples: 1
-Class: 9.890490890478333"]
-	231 -> 233 [label=False]
-	234 [label="feature_1 ≤ 4.418055012877928
-Samples: 3
-Impurity: 1.585"]
-	230 -> 234 [label=False]
-	235 [label="Leaf
-Samples: 1
-Class: 4.665091373152628"]
-	234 -> 235 [label=True]
-	236 [label="feature_1 ≤ 4.6414245468949265
-Samples: 2
-Impurity: 1.0"]
-	234 -> 236 [label=False]
-	237 [label="Leaf
-Samples: 1
-Class: 11.428751684847477"]
-	236 -> 237 [label=True]
-	238 [label="Leaf
-Samples: 1
-Class: 11.518451962920164"]
-	236 -> 238 [label=False]
-	239 [label="feature_1 ≤ 7.2112597763199116
-Samples: 40
-Impurity: 5.322"]
-	159 -> 239 [label=False]
-	240 [label="feature_1 ≤ 5.951572738365638
-Samples: 20
-Impurity: 4.322"]
-	239 -> 240 [label=True]
-	241 [label="feature_1 ≤ 5.23744630507116
-Samples: 10
-Impurity: 3.322"]
-	240 -> 241 [label=True]
-	242 [label="feature_1 ≤ 5.0470567426244095
-Samples: 5
-Impurity: 2.322"]
-	241 -> 242 [label=True]
-	243 [label="feature_1 ≤ 4.944862532378305
-Samples: 2
-Impurity: 1.0"]
-	242 -> 243 [label=True]
-	244 [label="Leaf
-Samples: 1
-Class: 10.01511367965769"]
-	243 -> 244 [label=True]
-	245 [label="Leaf
-Samples: 1
-Class: 9.846006787660484"]
-	243 -> 245 [label=False]
-	246 [label="feature_1 ≤ 5.171512297957112
-Samples: 3
-Impurity: 1.585"]
-	242 -> 246 [label=False]
-	247 [label="Leaf
-Samples: 1
-Class: 12.260065653024151"]
-	246 -> 247 [label=True]
-	248 [label="feature_1 ≤ 5.2140042527990245
-Samples: 2
-Impurity: 1.0"]
-	246 -> 248 [label=False]
-	249 [label="Leaf
-Samples: 1
-Class: 8.289309807384463"]
-	248 -> 249 [label=True]
-	250 [label="Leaf
-Samples: 1
-Class: 11.95333657331962"]
-	248 -> 250 [label=False]
-	251 [label="feature_1 ≤ 5.447031812507641
-Samples: 5
-Impurity: 2.322"]
-	241 -> 251 [label=False]
-	252 [label="feature_1 ≤ 5.337262573952431
-Samples: 2
-Impurity: 1.0"]
-	251 -> 252 [label=True]
-	253 [label="Leaf
-Samples: 1
-Class: 12.3695200313918"]
-	252 -> 253 [label=True]
-	254 [label="Leaf
-Samples: 1
-Class: 7.454220325375058"]
-	252 -> 254 [label=False]
-	255 [label="feature_1 ≤ 5.5399373845638795
-Samples: 3
-Impurity: 1.585"]
-	251 -> 255 [label=False]
-	256 [label="Leaf
+Impurity: 1.383"]
+	68 -> 69 [label=True]
+	70 [label="Leaf
 Samples: 1
 Class: 16.60209558849506"]
-	255 -> 256 [label=True]
-	257 [label="feature_1 ≤ 5.768458832157694
-Samples: 2
-Impurity: 1.0"]
-	255 -> 257 [label=False]
-	258 [label="Leaf
-Samples: 1
-Class: 9.838298882670312"]
-	257 -> 258 [label=True]
-	259 [label="Leaf
+	69 -> 70 [label=True]
+	71 [label="Leaf
 Samples: 1
 Class: 18.954250456079382"]
-	257 -> 259 [label=False]
-	260 [label="feature_1 ≤ 6.304277990913856
-Samples: 10
-Impurity: 3.322"]
-	240 -> 260 [label=False]
-	261 [label="feature_1 ≤ 5.998867479701227
+	69 -> 71 [label=False]
+	72 [label="feature_2 ≤ 4.394602108022301
+Samples: 17
+Impurity: 4.394"]
+	68 -> 72 [label=False]
+	73 [label="feature_2 ≤ 1.2340864668145395
+Samples: 15
+Impurity: 2.534"]
+	72 -> 73 [label=True]
+	74 [label="feature_1 ≤ 5.3666496845257905
 Samples: 5
-Impurity: 2.322"]
-	260 -> 261 [label=True]
-	262 [label="feature_1 ≤ 5.982792315040609
-Samples: 2
-Impurity: 1.0"]
-	261 -> 262 [label=True]
-	263 [label="Leaf
-Samples: 1
-Class: 9.110565357643866"]
-	262 -> 263 [label=True]
-	264 [label="Leaf
-Samples: 1
-Class: 11.445344778211334"]
-	262 -> 264 [label=False]
-	265 [label="feature_1 ≤ 6.064839532327941
+Impurity: 0.808"]
+	73 -> 74 [label=True]
+	75 [label="feature_1 ≤ 4.984856783970936
+Samples: 4
+Impurity: 0.144"]
+	74 -> 75 [label=True]
+	76 [label="Leaf
 Samples: 3
-Impurity: 1.585"]
-	261 -> 265 [label=False]
-	266 [label="Leaf
+Class: 11.497302066457891"]
+	75 -> 76 [label=True]
+	77 [label="Leaf
+Samples: 1
+Class: 12.3695200313918"]
+	75 -> 77 [label=False]
+	78 [label="Leaf
 Samples: 1
 Class: 13.796105356925397"]
-	265 -> 266 [label=True]
-	267 [label="feature_1 ≤ 6.175755107749687
+	74 -> 78 [label=False]
+	79 [label="feature_2 ≤ 4.240082697113953
+Samples: 10
+Impurity: 2.037"]
+	73 -> 79 [label=False]
+	80 [label="feature_2 ≤ 4.106856626883252
+Samples: 9
+Impurity: 1.694"]
+	79 -> 80 [label=True]
+	81 [label="feature_2 ≤ 2.5281242859839113
+Samples: 8
+Impurity: 1.083"]
+	80 -> 81 [label=True]
+	82 [label="feature_2 ≤ 2.176155389870287
+Samples: 4
+Impurity: 0.501"]
+	81 -> 82 [label=True]
+	83 [label="Leaf
+Samples: 3
+Class: 9.917203785932168"]
+	82 -> 83 [label=True]
+	84 [label="Leaf
+Samples: 1
+Class: 8.289309807384463"]
+	82 -> 84 [label=False]
+	85 [label="feature_1 ≤ 5.799678408832664
+Samples: 4
+Impurity: 0.779"]
+	81 -> 85 [label=False]
+	86 [label="Leaf
+Samples: 1
+Class: 11.95333657331962"]
+	85 -> 86 [label=True]
+	87 [label="feature_2 ≤ 2.8541803710949267
+Samples: 3
+Impurity: 0.489"]
+	85 -> 87 [label=False]
+	88 [label="Leaf
+Samples: 1
+Class: 11.445344778211334"]
+	87 -> 88 [label=True]
+	89 [label="feature_1 ≤ 5.865650461459379
 Samples: 2
-Impurity: 1.0"]
-	265 -> 267 [label=False]
-	268 [label="Leaf
+Impurity: 0.021"]
+	87 -> 89 [label=False]
+	90 [label="Leaf
+Samples: 1
+Class: 9.838298882670312"]
+	89 -> 90 [label=True]
+	91 [label="Leaf
 Samples: 1
 Class: 10.126981871202553"]
-	267 -> 268 [label=True]
-	269 [label="Leaf
+	89 -> 91 [label=False]
+	92 [label="Leaf
 Samples: 1
-Class: 16.261007897209215"]
-	267 -> 269 [label=False]
-	270 [label="feature_1 ≤ 6.95545185179887
-Samples: 5
-Impurity: 2.322"]
-	260 -> 270 [label=False]
-	271 [label="feature_1 ≤ 6.6089524893368505
+Class: 7.454220325375058"]
+	80 -> 92 [label=False]
+	93 [label="Leaf
+Samples: 1
+Class: 12.260065653024151"]
+	79 -> 93 [label=False]
+	94 [label="feature_1 ≤ 5.127204985848174
 Samples: 2
-Impurity: 1.0"]
-	270 -> 271 [label=True]
-	272 [label="Leaf
+Impurity: 4.941"]
+	72 -> 94 [label=False]
+	95 [label="Leaf
 Samples: 1
-Class: 15.279582694254216"]
-	271 -> 272 [label=True]
-	273 [label="Leaf
+Class: 4.665091373152628"]
+	94 -> 95 [label=True]
+	96 [label="Leaf
 Samples: 1
-Class: 15.997664867437724"]
-	271 -> 273 [label=False]
-	274 [label="feature_1 ≤ 7.074649608218313
-Samples: 3
-Impurity: 1.585"]
-	270 -> 274 [label=False]
-	275 [label="Leaf
-Samples: 1
-Class: 14.882552449524942"]
-	274 -> 275 [label=True]
-	276 [label="feature_1 ≤ 7.106586825095202
-Samples: 2
-Impurity: 1.0"]
-	274 -> 276 [label=False]
-	277 [label="Leaf
+Class: 9.110565357643866"]
+	94 -> 96 [label=False]
+	97 [label="feature_2 ≤ 1.8053817505956071
+Samples: 10
+Impurity: 9.125"]
+	67 -> 97 [label=False]
+	98 [label="feature_2 ≤ 0.4761335776734551
+Samples: 4
+Impurity: 4.495"]
+	97 -> 98 [label=True]
+	99 [label="Leaf
 Samples: 1
 Class: 22.04654744307834"]
-	276 -> 277 [label=True]
-	278 [label="Leaf
+	98 -> 99 [label=True]
+	100 [label="feature_1 ≤ 6.761526474342727
+Samples: 3
+Impurity: 1.649"]
+	98 -> 100 [label=False]
+	101 [label="Leaf
 Samples: 1
-Class: 14.156696425496824"]
-	276 -> 278 [label=False]
-	279 [label="feature_1 ≤ 8.474568274634322
-Samples: 20
-Impurity: 4.322"]
-	239 -> 279 [label=False]
-	280 [label="feature_1 ≤ 7.730500016578378
-Samples: 10
-Impurity: 3.322"]
-	279 -> 280 [label=True]
-	281 [label="feature_1 ≤ 7.308000600747345
-Samples: 5
-Impurity: 2.322"]
-	280 -> 281 [label=True]
-	282 [label="feature_1 ≤ 7.293066731895257
+Class: 16.261007897209215"]
+	100 -> 101 [label=True]
+	102 [label="feature_1 ≤ 7.305005549261962
 Samples: 2
-Impurity: 1.0"]
-	281 -> 282 [label=True]
-	283 [label="Leaf
+Impurity: 0.512"]
+	100 -> 102 [label=False]
+	103 [label="Leaf
 Samples: 1
 Class: 17.971061195321095"]
-	282 -> 283 [label=True]
-	284 [label="Leaf
-Samples: 1
-Class: 12.392390418592983"]
-	282 -> 284 [label=False]
-	285 [label="feature_1 ≤ 7.463894952141512
-Samples: 3
-Impurity: 1.585"]
-	281 -> 285 [label=False]
-	286 [label="Leaf
+	102 -> 103 [label=True]
+	104 [label="Leaf
 Samples: 1
 Class: 19.402403390176246"]
-	285 -> 286 [label=True]
-	287 [label="feature_1 ≤ 7.658761142857292
+	102 -> 104 [label=False]
+	105 [label="feature_1 ≤ 7.214254827805295
+Samples: 6
+Impurity: 2.613"]
+	97 -> 105 [label=False]
+	106 [label="feature_1 ≤ 6.95545185179887
+Samples: 4
+Impurity: 0.443"]
+	105 -> 106 [label=True]
+	107 [label="feature_1 ≤ 6.6089524893368505
 Samples: 2
-Impurity: 1.0"]
-	285 -> 287 [label=False]
-	288 [label="Leaf
+Impurity: 0.129"]
+	106 -> 107 [label=True]
+	108 [label="Leaf
+Samples: 1
+Class: 15.279582694254216"]
+	107 -> 108 [label=True]
+	109 [label="Leaf
+Samples: 1
+Class: 15.997664867437724"]
+	107 -> 109 [label=False]
+	110 [label="feature_1 ≤ 7.100510655353061
+Samples: 2
+Impurity: 0.132"]
+	106 -> 110 [label=False]
+	111 [label="Leaf
+Samples: 1
+Class: 14.882552449524942"]
+	110 -> 111 [label=True]
+	112 [label="Leaf
+Samples: 1
+Class: 14.156696425496824"]
+	110 -> 112 [label=False]
+	113 [label="feature_1 ≤ 7.451956134774807
+Samples: 2
+Impurity: 0.237"]
+	105 -> 113 [label=False]
+	114 [label="Leaf
+Samples: 1
+Class: 12.392390418592983"]
+	113 -> 114 [label=True]
+	115 [label="Leaf
 Samples: 1
 Class: 11.418778072762066"]
-	287 -> 288 [label=True]
-	289 [label="Leaf
-Samples: 1
-Class: 18.78882686582791"]
-	287 -> 289 [label=False]
-	290 [label="feature_1 ≤ 7.936864710735267
-Samples: 5
-Impurity: 2.322"]
-	280 -> 290 [label=False]
-	291 [label="feature_1 ≤ 7.801543923770641
+	113 -> 115 [label=False]
+	116 [label="feature_2 ≤ 3.4727021232598583
+Samples: 16
+Impurity: 5.791"]
+	66 -> 116 [label=False]
+	117 [label="feature_1 ≤ 8.860534164580171
+Samples: 6
+Impurity: 2.057"]
+	116 -> 117 [label=True]
+	118 [label="feature_1 ≤ 7.8866490205757716
 Samples: 2
-Impurity: 1.0"]
-	290 -> 291 [label=True]
-	292 [label="Leaf
+Impurity: 0.09"]
+	117 -> 118 [label=True]
+	119 [label="Leaf
 Samples: 1
 Class: 22.96596989823352"]
-	291 -> 292 [label=True]
-	293 [label="Leaf
-Samples: 1
-Class: 22.19126910984248"]
-	291 -> 293 [label=False]
-	294 [label="feature_1 ≤ 8.052971644352503
-Samples: 3
-Impurity: 1.585"]
-	290 -> 294 [label=False]
-	295 [label="Leaf
+	118 -> 119 [label=True]
+	120 [label="Leaf
 Samples: 1
 Class: 22.36447259739529"]
-	294 -> 295 [label=True]
-	296 [label="feature_1 ≤ 8.185674286341953
-Samples: 2
-Impurity: 1.0"]
-	294 -> 296 [label=False]
-	297 [label="Leaf
-Samples: 1
-Class: 20.87423329797253"]
-	296 -> 297 [label=True]
-	298 [label="Leaf
-Samples: 1
-Class: 17.896289677668243"]
-	296 -> 298 [label=False]
-	299 [label="feature_1 ≤ 9.451066239870526
-Samples: 10
-Impurity: 3.322"]
-	279 -> 299 [label=False]
-	300 [label="feature_1 ≤ 8.982665723275542
-Samples: 5
-Impurity: 2.322"]
-	299 -> 300 [label=True]
-	301 [label="feature_1 ≤ 8.766944441756308
-Samples: 2
-Impurity: 1.0"]
-	300 -> 301 [label=True]
-	302 [label="Leaf
-Samples: 1
-Class: 19.742880205085232"]
-	301 -> 302 [label=True]
-	303 [label="Leaf
-Samples: 1
-Class: 19.734835016864327"]
-	301 -> 303 [label=False]
-	304 [label="feature_1 ≤ 9.155973185509493
-Samples: 3
-Impurity: 1.585"]
-	300 -> 304 [label=False]
-	305 [label="Leaf
-Samples: 1
-Class: 25.04146372365344"]
-	304 -> 305 [label=True]
-	306 [label="feature_1 ≤ 9.30686588293653
-Samples: 2
-Impurity: 1.0"]
-	304 -> 306 [label=False]
-	307 [label="Leaf
-Samples: 1
-Class: 26.263246237402917"]
-	306 -> 307 [label=True]
-	308 [label="Leaf
+	118 -> 120 [label=False]
+	121 [label="feature_2 ≤ 1.3573339533206752
+Samples: 4
+Impurity: 0.757"]
+	117 -> 121 [label=False]
+	122 [label="Leaf
 Samples: 1
 Class: 23.98068079009926"]
-	306 -> 308 [label=False]
-	309 [label="feature_1 ≤ 9.67608330419559
-Samples: 5
-Impurity: 2.322"]
-	299 -> 309 [label=False]
-	310 [label="feature_1 ≤ 9.581731697422377
-Samples: 2
-Impurity: 1.0"]
-	309 -> 310 [label=True]
-	311 [label="Leaf
-Samples: 1
-Class: 22.621832473981684"]
-	310 -> 311 [label=True]
-	312 [label="Leaf
-Samples: 1
-Class: 20.48633920225868"]
-	310 -> 312 [label=False]
-	313 [label="feature_1 ≤ 9.697472399632765
+	121 -> 122 [label=True]
+	123 [label="feature_1 ≤ 9.458920435925556
 Samples: 3
-Impurity: 1.585"]
-	309 -> 313 [label=False]
-	314 [label="Leaf
+Impurity: 0.257"]
+	121 -> 123 [label=False]
+	124 [label="Leaf
 Samples: 1
-Class: 22.17098245962077"]
-	313 -> 314 [label=True]
-	315 [label="feature_1 ≤ 9.783983943812558
+Class: 25.04146372365344"]
+	123 -> 124 [label=True]
+	125 [label="feature_1 ≤ 9.458920435925556
 Samples: 2
-Impurity: 1.0"]
-	313 -> 315 [label=False]
-	316 [label="Leaf
+Impurity: 0.044"]
+	123 -> 125 [label=False]
+	126 [label="Leaf
+Samples: 1
+Class: 26.263246237402917"]
+	125 -> 126 [label=True]
+	127 [label="Leaf
 Samples: 1
 Class: 25.84371805561636"]
-	315 -> 316 [label=True]
-	317 [label="Leaf
+	125 -> 127 [label=False]
+	128 [label="feature_1 ≤ 8.897259077809228
+Samples: 10
+Impurity: 2.142"]
+	116 -> 128 [label=False]
+	129 [label="feature_1 ≤ 8.185674286341953
+Samples: 6
+Impurity: 1.916"]
+	128 -> 129 [label=True]
+	130 [label="feature_1 ≤ 7.780715706737873
+Samples: 3
+Impurity: 1.962"]
+	129 -> 130 [label=True]
+	131 [label="Leaf
+Samples: 1
+Class: 18.78882686582791"]
+	130 -> 131 [label=True]
+	132 [label="feature_1 ≤ 7.967866547547374
+Samples: 2
+Impurity: 0.434"]
+	130 -> 132 [label=False]
+	133 [label="Leaf
+Samples: 1
+Class: 22.19126910984248"]
+	132 -> 133 [label=True]
+	134 [label="Leaf
+Samples: 1
+Class: 20.87423329797253"]
+	132 -> 134 [label=False]
+	135 [label="feature_1 ≤ 8.474568274634322
+Samples: 3
+Impurity: 0.754"]
+	129 -> 135 [label=False]
+	136 [label="Leaf
+Samples: 1
+Class: 17.896289677668243"]
+	135 -> 136 [label=True]
+	137 [label="Leaf
+Samples: 2
+Class: 19.73885761097478"]
+	135 -> 137 [label=False]
+	138 [label="feature_1 ≤ 9.782357821825379
+Samples: 4
+Impurity: 1.239"]
+	128 -> 138 [label=False]
+	139 [label="feature_2 ≤ 4.6279389746979325
+Samples: 3
+Impurity: 0.845"]
+	138 -> 139 [label=True]
+	140 [label="feature_1 ≤ 9.601494670872373
+Samples: 2
+Impurity: 0.051"]
+	139 -> 140 [label=True]
+	141 [label="Leaf
+Samples: 1
+Class: 22.621832473981684"]
+	140 -> 141 [label=True]
+	142 [label="Leaf
+Samples: 1
+Class: 22.17098245962077"]
+	140 -> 142 [label=False]
+	143 [label="Leaf
+Samples: 1
+Class: 20.48633920225868"]
+	139 -> 143 [label=False]
+	144 [label="Leaf
 Samples: 1
 Class: 19.963148280949603"]
-	315 -> 317 [label=False]
+	138 -> 144 [label=False]
 }
