@@ -18,7 +18,7 @@ class MixtureOfGaussian:
         pi = np.ones(K) / K
 
         # mu is selected as values of #K sampled from data
-        indices = np.random.choice(N, K, replace=False)  # <-- K, not D
+        indices = np.random.choice(N, K, replace=False)
         mu = self.data.iloc[indices].values  # <-- ndarray (K, D)
 
         # cov is initialized as identity
@@ -31,9 +31,9 @@ class MixtureOfGaussian:
         K = self.component_size
         hidden_posterior = np.zeros((N, K))
         mu, cov, pi = self.mu, self.cov, self.pi
-        X = self.data.values  # <-- ndarray (N, D)
+        X = self.data.values
         for ind, x in enumerate(X):
-            normalization = self.compute_normalization(x, mu, cov, pi)  # <-- pass all
+            normalization = self.compute_normalization(x, mu, cov, pi)
             for k in range(K):
                 hidden_posterior[ind, k] = (
                     self.compute_prior_likelihood(x, mu[k], cov[k], pi[k])
@@ -64,5 +64,37 @@ class MixtureOfGaussian:
             normalization += comp_pi * density
         return normalization
 
+    def M_step(self):
+        hidden_posterior = self.E_step()
+        N_K = hidden_posterior.sum(axis=0)  # (K, )
+        X = self.data.values
+        self.new_mu(X, hidden_posterior, N_K)
+        self.new_cov(X, hidden_posterior, N_K)
+        self.new_pi(N_K)
+        return self.mu, self.cov, self.pi
 
-print(MixtureOfGaussian().E_step())
+    def new_mu(self, X, hidden_posterior, N_K):
+        K = self.component_size
+        self.mu = (hidden_posterior.T @ X) / N_K[:, None]
+
+    def new_cov(self, X, hidden_posterior, N_K):
+        K = self.component_size
+        N, D = X.shape
+        mu = self.mu  # (K, D)
+        cov_list = []
+        for k in range(K):
+            Xc = X - mu[k]  # (N, D)
+            W = hidden_posterior[:, k][:, None]  # (N, 1)
+            Sk = (Xc * W).T @ Xc / N_K[k]  # (D, D)
+            Sk.flat[:: D + 1] += 1e-6
+            cov_list.append(Sk)
+        self.cov = np.stack(cov_list, axis=0)  # (K, D, D)
+
+    def new_pi(self, N_K):
+        N = self.data.shape[0]
+        self.pi = N_K * (1 / N)
+
+
+m_of_g = MixtureOfGaussian()
+print(m_of_g.E_step())
+print(m_of_g.M_step())
