@@ -9,21 +9,26 @@ class MixtureOfGaussian:
         )
         self.component_size = component_size
         self.mu, self.cov, self.pi = self.initalization()
+        self.eval_old, self.eval_new = -np.inf, self.evaluation()  # <-- init
+
+    def __call__(self, tol=1e-4, max_iter=200):
+        it = 0
+        while (
+            it < max_iter and abs(self.eval_new - self.eval_old) > tol
+        ):  # <-- condition
+            self.eval_old = self.eval_new
+            self.E_step()  # sets self.hidden_posterior
+            self.M_step()  # uses self.hidden_posterior
+            self.eval_new = self.evaluation()
+            it += 1
 
     def initalization(self):
         N, D = self.data.shape
         K = self.component_size
-
-        # pi initialized to uniform distribution
         pi = np.ones(K) / K
-
-        # mu is selected as values of #K sampled from data
         indices = np.random.choice(N, K, replace=False)
-        mu = self.data.iloc[indices].values  # <-- ndarray (K, D)
-
-        # cov is initialized as identity
+        mu = self.data.iloc[indices].values
         cov = np.array([np.eye(D) for _ in range(K)])
-
         return mu, cov, pi
 
     def E_step(self):
@@ -39,17 +44,16 @@ class MixtureOfGaussian:
                     self.compute_prior_likelihood(x, mu[k], cov[k], pi[k])
                     / normalization
                 )
+        self.hidden_posterior = hidden_posterior  # <-- store for M-step
         return hidden_posterior
 
     def compute_prior_likelihood(self, x, mu, cov, pi):
         cov_det = np.linalg.det(cov)
         cov_inv = np.linalg.inv(cov)
         D = x.shape[0]
-        # Gaussian density constant
         norm_const = 1.0 / ((2 * np.pi) ** (D / 2) * np.sqrt(cov_det))
-        # Quadratic form with matrix multiplications
         quad = (x - mu).T @ cov_inv @ (x - mu)
-        density = norm_const * np.exp(-0.5 * quad)  # <-- multiply, not divide
+        density = norm_const * np.exp(-0.5 * quad)
         return pi * density
 
     def compute_normalization(self, x, mu, cov, pi):
@@ -65,8 +69,8 @@ class MixtureOfGaussian:
         return normalization
 
     def M_step(self):
-        hidden_posterior = self.E_step()
-        N_K = hidden_posterior.sum(axis=0)  # (K, )
+        hidden_posterior = self.hidden_posterior  # <-- use cached gamma
+        N_K = hidden_posterior.sum(axis=0)  # (K,)
         X = self.data.values
         self.new_mu(X, hidden_posterior, N_K)
         self.new_cov(X, hidden_posterior, N_K)
@@ -74,27 +78,50 @@ class MixtureOfGaussian:
         return self.mu, self.cov, self.pi
 
     def new_mu(self, X, hidden_posterior, N_K):
-        K = self.component_size
         self.mu = (hidden_posterior.T @ X) / N_K[:, None]
 
     def new_cov(self, X, hidden_posterior, N_K):
         K = self.component_size
         N, D = X.shape
-        mu = self.mu  # (K, D)
+        mu = self.mu
         cov_list = []
         for k in range(K):
-            Xc = X - mu[k]  # (N, D)
-            W = hidden_posterior[:, k][:, None]  # (N, 1)
-            Sk = (Xc * W).T @ Xc / N_K[k]  # (D, D)
+            Xc = X - mu[k]
+            W = hidden_posterior[:, k][:, None]
+            Sk = (Xc * W).T @ Xc / N_K[k]
             Sk.flat[:: D + 1] += 1e-6
             cov_list.append(Sk)
-        self.cov = np.stack(cov_list, axis=0)  # (K, D, D)
+        self.cov = np.stack(cov_list, axis=0)
 
     def new_pi(self, N_K):
         N = self.data.shape[0]
         self.pi = N_K * (1 / N)
 
+    def evaluation(self):
+        X = self.data.values.astype(float)
+        mu, cov, pi = self.mu, self.cov, self.pi
+        N, D = X.shape
+        K = self.component_size
+        ll = 0.0
+        eps = 1e-16
+        for n in range(N):
+            x = X[n]
+            s = 0.0
+            for k in range(K):
+                det = np.linalg.det(cov[k])
+                inv = np.linalg.inv(cov[k])
+                norm_const = 1.0 / ((2 * np.pi) ** (D / 2) * np.sqrt(det))
+                quad = (x - mu[k]).T @ inv @ (x - mu[k])
+                density = norm_const * np.exp(-0.5 * quad)
+                s += pi[k] * density
+            ll += np.log(s + eps)
+        return ll
 
-m_of_g = MixtureOfGaussian()
-print(m_of_g.E_step())
-print(m_of_g.M_step())
+
+if __name__ == "__main__":
+    m = MixtureOfGaussian()
+    print("Initial log-likelihood:", m.eval_new)
+    m()
+    print("Final log-likelihood:", m.eval_new)
+    print("Final mixture weights:", m.pi)
+    print("Final means:\n", m.mu)
