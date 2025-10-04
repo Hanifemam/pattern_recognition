@@ -1,5 +1,7 @@
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.patches import Ellipse
 
 
 class MixtureOfGaussian:
@@ -117,6 +119,47 @@ class MixtureOfGaussian:
             ll += np.log(s + eps)
         return ll
 
+    def hard_clustering(self):
+        return np.argmax(self.hidden_posterior, axis=1)
+
+    def plot_clusters(self):
+        # Use only feature columns (ignore the 'label' column)
+        X = self.data[["x1", "x2"]].values
+        labels = self.hard_clustering()
+
+        plt.figure(figsize=(6, 5))
+        plt.scatter(X[:, 0], X[:, 1], c=labels, cmap="viridis", s=15, label="Data")
+
+        # draw one ellipse per Gaussian component
+        for k in range(self.component_size):
+            mean = self.mu[k, :2]  # use first two dims
+            cov = self.cov[k, :2, :2]  # use 2x2 covariance for plotting
+
+            vals, vecs = np.linalg.eigh(cov)
+            vx, vy = vecs[0, 0], vecs[1, 0]
+            angle = np.degrees(np.arctan2(vy, vx))
+            width, height = 2 * np.sqrt(vals)  # 1-sigma ellipse
+
+            ell = Ellipse(
+                xy=tuple(mean),
+                width=width,
+                height=height,
+                angle=angle,
+                edgecolor="red",
+                facecolor="none",
+                lw=2,
+            )
+            plt.gca().add_patch(ell)
+            plt.text(
+                mean[0], mean[1], f"  G{k}", color="red", fontsize=10, weight="bold"
+            )
+
+        plt.title("GMM Clustering with Gaussian Components")
+        plt.xlabel("x1")
+        plt.ylabel("x2")
+        plt.legend()
+        plt.savefig("clustering_with_countors")
+
 
 if __name__ == "__main__":
     m = MixtureOfGaussian()
@@ -125,3 +168,4 @@ if __name__ == "__main__":
     print("Final log-likelihood:", m.eval_new)
     print("Final mixture weights:", m.pi)
     print("Final means:\n", m.mu)
+    m.plot_clusters()
